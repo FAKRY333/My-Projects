@@ -1,0 +1,132 @@
+
+*{
+    box-sizing: border-box;
+}
+.bro{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body{
+    background: linear-gradient(to right ,rgb(73, 235, 227) ,white);
+}
+
+h1{
+    border:rgb(47, 255, 134) groove 15px;
+    background: rgba(0, 0, 255, 0) ;
+    color: rgb(146, 255, 4);
+    text-align: center;
+    transition: 2s;
+   display: flex;
+}
+.face{
+    height: 900px;
+    width: 900px;
+    background: burlywood;
+    border-radius: 50%;
+    display: grid;
+    margin-left: 17%;
+    transition: 3s;
+    position: absolute;
+}
+.face:hover{
+    background: red;
+}
+h1:hover{
+    background-color: rgba(137, 43, 226, 0.274);
+    border-color: red;
+    color: black;
+}
+.eye{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right: 250px;
+    top: 200px;
+    box-shadow: 50px 0 white , -50px 0 white, 0px 30px white, 0px -30px white;
+    transition: 2s;
+}
+.eye2{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right: 550px;
+    top: 200px;
+    box-shadow: 50px 0 white , -50px 0 white, 0px 30px white, 0px -30px white;
+    transition: 2s;
+}
+.mosh{
+    background-color: rgb(172, 86, 86);
+    height: 100px;
+    width: 400px;
+    border-top-left-radius: 100px ;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: absolute;
+    top: 530px;
+    right: 250px;
+    border: solid burlywood;
+    transition: 2s;
+
+}
+.mosh:hover{
+    width: 450px;
+    border-start-start-radius: 15px;
+    border-start-end-radius: 15px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    ;
+}
+.eye:hover{
+    background-color: white;
+    box-shadow: 50px 0 black , -50px 0 black, 0px 30px black, 0px -30px black;
+
+    border-radius: 50%;
+
+}
+.eye2:hover{
+    background-color: white;
+        box-shadow: 50px 0 black , -50px 0 black, 0px 30px black, 0px -30px black;
+
+    border-radius: 50%;
+}
+.ss{
+    background-color: white;
+    width: 300px;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    transition: 2s;
+}
+.ss:hover{
+    width: 320px;
+    height: 25px;
+}
+.ff{
+        background-color: white;
+    width: 300px;
+    height: 10px;
+    position: absolute;
+    top: 60px;
+    left: 55px;
+    transition: 2s;
+}
+.manher{
+    background-color: rgb(250, 203, 133);
+    height: 100px;
+    width: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    top: 45%;
+    right: 45%;
+}

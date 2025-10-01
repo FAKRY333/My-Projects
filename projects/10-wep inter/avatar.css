@@ -1,0 +1,116 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+           background-size: cover;
+    }
+.contaner{
+    
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.226), rgba(255, 255, 255, 0.24)), 
+    url(photo/camira.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+transition: 1s;
+}
+.contaner header{
+    height: 10%;
+    margin: 8px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.contaner header ul{
+    padding: 7px;
+    list-style: none;
+    display: flex;
+gap: 40px;    
+}
+.contaner header ul li a{
+color: white;
+text-decoration: none;
+font-size: 18px;
+font-weight: 700;
+text-transform: capitalize;
+margin: 5px;
+transition: 0.5s;
+}
+.contaner header ul li a:hover{
+    color: rgb(6, 166, 187);
+}
+.contaner header .logo a{
+    text-decoration: none;
+     font-size: 30px;
+    color: white;
+    font-weight: 900;
+    text-transform: capitalize;
+
+}
+.contaner .main{
+    padding: 15px;
+margin: 15px;
+margin-top: 2em;
+    color: wheat;
+    height: 80%;
+    display: flex;
+   flex-flow: column wrap;
+   gap: 40px
+   ;
+}
+.contaner .main p{
+    max-width: 430px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.contaner .main h1{
+text-transform: capitalize;
+font-size: 70px;
+}
+.contaner .main button{
+    font-family:sans-serif;
+    letter-spacing: 1px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(173, 255, 217);
+     transition: 0.5s;
+}
+.contaner .main button:hover{
+color: wheat;
+background-color: black;
+}
+.contaner .photo{
+
+    width: 300px;
+    height: 200px;
+    
+    position: absolute;
+    bottom: 0;
+animation-name: ani;
+}
+@keyframes ami{
+from{
+transform: translate(0);
+}
+ to{
+transform: translate(10px);
+ }
+}
+.contaner .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}

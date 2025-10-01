@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+body{
+    background:linear-gradient(#000000 ,lab(53.11% 16.8 59.89 / 0.89)) ;
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 247, 255, 0.801);
+    position: absolute;
+    clip-path: circle(50% at left 80%);
+}
+.card{
+    background-color:rgba(255, 255, 255, 0.171);
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row wrap;
+    box-shadow: -7px 5px 5px 8px black;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+.card .head{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.card .head ul{
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul li a{
+    text-decoration: none;
+   font-size: 20px;
+   color: white;
+transition: 0.5s;
+}
+
+ul li a:hover{
+color: red;
+}
+ul li{
+    list-style: none;
+    
+}
+.card .text{
+    width: 44%;
+    justify-self: flex-start;
+    align-self: center;
+    color: wheat;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    margin: 15px;
+    
+}
+.card .text h2{
+    align-self: center;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+.card .text p{
+    align-self: end;
+    font-size: 28px;
+    color:rgb(186, 255, 122);
+}
+.card .photo{
+    height: 400px;;
+    width: 400px;
+  align-self: center;
+  border-radius: 15px;
+}
+.card .photo img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+ scale: 1 1.5;
+} 
+.card .bot{
+    position: absolute;
+    bottom: 10%;
+    left: 17%;
+  width: 150px;
+  height: 100px;
+  display: flex;
+}
+
+.card button{
+    width: 100%;
+    font-size: 24px;
+    background-color: rgba(6, 209, 84, 0.911);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.card button:hover{
+    background-color: rgba(141, 255, 185, 0.911);
+
+}
+
+
+
+
+@media (max-width:390px){
+    .card{
+        height: 95%;
+      word-break: break-all;    
+    }
+}
+@media (max-width:460px){
+.card{
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 247, 255, 0.801);
+    position: absolute;
+    clip-path: circle(50% at bottom 80%);
+}
+}
+@media (max-width:520px){
+     .card .text{
+        position: absolute;
+        bottom: -50px;
+height: 50%;
+        display: flex;
+    
+        flex-wrap: wrap;
+        align-items: end;
+       padding: 20px;
+
+     }
+     .card{
+        height: 85%;
+        height: 85%;
+     }
+    .card .text p{
+
+    }
+}
+@media (max-width:700px){
+.card{
+    flex-direction: column;
+   
+}
+.card .photo{
+    width: 40%;
+    height: 60%;
+   align-self: flex-end; 
+}
+.card .text{
+    position: absolute;
+    bottom: 100px;
+
+}
+.card .photo img{
+    scale:  1 1;
+}
+}

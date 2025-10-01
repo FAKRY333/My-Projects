@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+
+}
+.contaner{
+    width: 100%;
+background: linear-gradient(rgb(49, 45, 45), white);
+    position: relative;
+    overflow: scroll;
+    height: 100vh;
+}
+.contaner header{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contaner header ul{
+    display: flex;
+    gap: 25px;
+}
+.contaner header ul li a{
+    text-decoration: none;
+    color: rgb(122, 235, 255);
+    transition: 0.5s;
+
+}
+.contaner header ul li a:hover{
+color: white;
+}
+
+.contaner header ul li .out{
+color: black;
+font-size: 19px;
+}
+.contaner header ul .liout{
+    width: 70px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    transition: 1;
+}
+.contaner header ul .liout:hover{
+    background-color: rgb(53, 47, 47);
+color: white;
+}
+
+
+
+.contaner header ul li{
+list-style: none;
+}
+.contaner header .logo a{
+    color: aquamarine;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.contaner .sidbar{
+    border: solid 3px black;
+    height: 100%;
+    width: 23%;
+position: absolute;
+border-radius: 15px;
+right: 0;
+box-shadow: -5px 5px 5px 2px black;
+background-color: rgba(255, 255, 255, 0.247);
+}
+.contaner .sidbar ul{
+    height: 100%;
+list-style-type: none;
+display: flex;
+flex-flow: column wrap;
+padding: 10px;
+align-items: center;
+}
+.contaner .sidbar ul li{
+    padding-top: 20px;
+}
+.contaner .sidbar ul li a{
+text-decoration: none;
+color: aliceblue;
+transition: 0.5s;
+font-size: 16px;
+letter-spacing: 0.5px;
+}
+.contaner .sidbar ul li a:hover{
+color: black;
+}
+.contaner .header ul li a:hover{
+    color: red;
+}
+.brodict{
+    width: 75%;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px,auto));
+gap: 10px;
+padding: 10px;
+}
+.contaner .brodict .item{
+border-radius: 10px;
+border: solid 2px black;
+display: flex;
+align-items: center;
+flex-flow: column wrap;
+}
+footer{
+    width: 100%;
+    background-color: green;
+    height: 60px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ font-size: 30px;
+text-transform: capitalize;
+}
+.pro{
+    border-radius: 20px;
+    width: 200px;
+    color: red;
+}
+.item{
+    background-color: rgba(255, 255, 255, 0.363);
+}
+.contaner .brodict a{
+    
+    color: rgb(18, 216, 61);
+    transition: 1s;
+    border-radius: 15px;
+    text-decoration-thickness: 0.01px;
+}
+
+.contaner .brodict a:hover{
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-decoration-color: red;
+    background-color: aqua;
+    color: #000;
+    scale: 1.080 1.080;
+}

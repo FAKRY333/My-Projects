@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+font-family: cursive;
+}
+body{
+    padding: 5px;
+     background: url(photo/viwe.jpg) no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    height: 86vh;
+    position: relative;
+    border-radius: 20px;
+padding: 5px;
+box-shadow: -5px 5px 8px 3px black;
+    backdrop-filter: blur(3px);
+
+
+}
+.card header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    color: burlywood;
+}
+.card header ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 5px;
+}
+.card header ul li a{
+    color: rgb(112, 245, 72);
+text-decoration: none;
+font-size: 18px;
+transition: 0.5s;
+}
+.card header ul li a:hover{
+    color: rgb(255, 107, 107);
+}
+
+
+
+.card .text{
+    width: 43%;
+    padding: 8px;
+    height: 60%;
+    align-content: center;
+    display: flex;
+flex-flow: column wrap;
+gap: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+.card .text h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(37, 34, 34);
+}
+.card .text p{
+    text-transform: capitalize;
+    font-size: 27px;
+    color: aquamarine;
+}
+.card .photo{
+    width: 30%;
+    height: 80%;
+position: absolute;
+right: 40px;
+bottom: 50px;
+border-radius: 50px;
+}
+.card .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.card .text button{
+    width: 50%;
+    height: 60px;
+    position: absolute;
+    bottom: 5px;
+    left: 30%;
+    justify-self: center;
+    border-radius: 15px;
+    background-color: greenyellow;
+     font-size: 20px;
+     transition: 0.5s;
+}
+.card .text button:hover{
+    background-color: rgb(211, 250, 153);
+
+}

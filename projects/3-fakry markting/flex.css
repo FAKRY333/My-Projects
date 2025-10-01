@@ -1,0 +1,120 @@
+*{
+    text-decoration: wavy black 4px;
+}
+
+
+body{
+    background: linear-gradient(to left , #0f4903, #59fff1) ;
+    
+}
+.flex{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.flex div{
+    padding: 3px;
+    margin: 9px;
+width: 200px;
+
+}
+.one{
+    background-color: #39125a;
+    border-radius: 15px;
+    transition: 2s;
+}
+
+.img{
+position:relative;
+bottom: 1px;
+left: 18px;
+}
+header{
+    background: rgb(0, 26, 255);
+    display: flex;
+    flex-flow: row wrap;
+     border-radius: 10px;
+     height: 100px;
+}
+header ul {
+    display: inline-flex;
+    justify-content: end;
+    width: 50vw;
+    word-spacing: 10px;
+}
+header ul a{
+    
+    list-style: none;
+text-decoration: none;
+    color: bisque;
+    font-size: 26px;
+}
+#hh{
+    display: inline;
+    font-family: monospace;
+    color: rgb(99, 240, 240);
+    font-size: 38px;
+    text-shadow: 5px 5px 3px rgba(1, 106, 124, 0.815);
+}
+header ul a li{
+    padding: 0 28px;
+    gap: 20px;
+    font-size: 20px;
+     transition: 0.5s;
+}
+header ul{
+    white-space: wrap;
+    position: relative;
+    left: 30vw;
+}
+div p{
+    color: wheat;
+    font-size: 21px;
+}
+.one{
+white-space: wrap;
+}
+li:hover{
+    color: black;
+}
+header{
+    white-space: wrap pre;
+
+}
+p:hover{
+    color: red;
+}
+.parent .flex .one a{
+    text-decoration: solid black 3px;
+}
+.one{
+    transition: 0.3s;
+}
+.one:hover{
+transform:rotate(5px 5px);  
+}
+.log{
+    color: black;
+    border-radius: 5px;
+    border: #06796f solid 2px;
+    background-color: rgb(19, 247, 255);
+    width: 116px;
+    text-align: center;
+}
+.log:hover{
+    color: white;
+background-color: black;
+}
+.se{
+    height: 30px;
+    align-self: flex-end;
+    justify-content: center;
+    position: relative;
+    top: -26px;
+    right: 400px;
+}
+.Search{
+    width: 100%;
+    height: 70%;
+}
